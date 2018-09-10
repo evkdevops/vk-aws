@@ -1,5 +1,12 @@
 <html>
-<body>
-<p> hostname is : $(hostname)</p>
-</body>
+<body onload = "load()">
+<p>Hostname is:</p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x = location.hostname;
+    document.getElementById("demo").innerHTML= x;
+}
+</script>
 </html>
+
